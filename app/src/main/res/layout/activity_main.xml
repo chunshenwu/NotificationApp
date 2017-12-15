@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Send_Notification"
+            android:onClick="Send_Notification"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Clear_Notification"
+            android:onClick="Clear_Notification"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shortcut"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Create_Shortcut"
+            android:onClick="Create_Shortcut"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Clear_Shortcut"
+            android:onClick="Clear_Shortcut"
+            />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shortcut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:onClick="Widget"
+        android:text="Enable Widget（同时关闭应用套用生效）"/>
+
+
+</RelativeLayout>
